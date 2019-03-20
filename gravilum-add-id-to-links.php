@@ -7,7 +7,7 @@
  *              doesn't already have one within every post and page content. Does
  *              not add IDs to links in the header, footer, sidebars, or other
  *              areas outside the post or page content.
- * Version: 1.0
+ * Version: 1.1
  * Author: Nate Phillips
  * Author URI: https://www.gravilum.com
  * License:     GPL2
