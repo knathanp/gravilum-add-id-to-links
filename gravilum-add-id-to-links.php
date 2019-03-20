@@ -39,7 +39,7 @@
       '/(\<a(.*?))\>(.*)(<\/a>)/i', 
       function( $matches ) {
         static $link_counter = 100;  
-        if ( !stripos( $matches[1], 'id=' ) ) {
+        if ( !stripos( $matches[1], ' id=' ) ) {
           $matches[0] = $matches[1] . $matches[2] . ' id="gravilum-ga-link-' . 
                         $link_counter++ . '">' . $matches[3] . $matches[4];                
         }
