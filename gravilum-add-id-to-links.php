@@ -7,7 +7,7 @@
  *              doesn't already have one within every post and page content. Does
  *              not add IDs to links in the header, footer, sidebars, or other
  *              areas outside the post or page content.
- * Version: 1.1
+ * Version: 1.2
  * Author: Nate Phillips
  * Author URI: https://www.gravilum.com
  * License:     GPL2
@@ -29,7 +29,7 @@
  /* This line for security...prevents standalone execution of this file */
  defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
- add_filter( 'the_content', 'gravilum_add_id_to_links');
+ add_filter( 'the_content', 'gravilum_add_id_to_links', 99);
 
  function gravilum_add_id_to_links( $content ) {
 
